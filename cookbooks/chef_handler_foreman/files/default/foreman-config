@@ -1,0 +1,7 @@
+require 'chef_handler_foreman'
+foreman_server_options  :url => "https://192.168.13.13:8443"
+foreman_facts_upload    true
+foreman_reports_upload  true
+foreman_enc             true, 'automatic'
+foreman_facts_whitelist ['cpu', 'lsb', 'network']
+foreman_facts_blacklist ['flags']
