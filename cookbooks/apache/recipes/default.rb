@@ -3,6 +3,8 @@
 # Copyright 2013, YOUR_COMPANY_NAME#
 # All rights reserved - Do Not Redistribute## Install httpd package but don’t start it
 
+include_recipe 'slack_handler'
+
 package "httpd" do        
   action [:install]
 end
